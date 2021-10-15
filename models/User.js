@@ -14,9 +14,9 @@ const UserSchema = new Schema(
             required: true,
             unique: true,
             match: [/[\w.]+@[\w.]+.[\w.]+/]
-        },
-        thoughts: [ThoughtSchema],
-        friends: [UserSchema]
+        }
+        // thoughts: [ThoughtSchema],
+        // friends: [UserSchema]
     }
 );
 

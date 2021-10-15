@@ -44,21 +44,21 @@ const ThoughtSchema = new Schema(
         username: {
             type: String,
             required: true
-        },
+        }
         // create reactions schema like the replies schema..
-        reactions: [ReactionSchema]
+        // reactions: [ReactionSchema]
     },
     {
         toJSON: {
-            getters: true,
-            virtuals: true
+            // getters: true,
+            // virtuals: true
         }
     }
 );
 
-ThoughtSchema.virtual('reactionCount').get(function() {
-    return this.reactions.length
-});
+// ThoughtSchema.virtual('reactionCount').get(function() {
+//     return this.reactions.length
+// });
 
 const Thought = model('Thought', ThoughtSchema);
 
