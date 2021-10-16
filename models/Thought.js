@@ -44,9 +44,9 @@ const ThoughtSchema = new Schema(
         username: {
             type: String,
             required: true
-        }
+        },
         // create reactions schema like the replies schema..
-        // reactions: [ReactionSchema]
+        reactions: [ReactionSchema]
     },
     {
         toJSON: {
